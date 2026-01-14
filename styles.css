@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+#header-img {
+  width: 120px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #e91e63;
+}
+
+#hero {
+  background: url("https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1350&q=80")
+    center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+#form {
+  margin-top: 25px;
+}
+
+#email {
+  padding: 10px;
+  width: 260px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+#submit {
+  padding: 10px 20px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+#submit:hover {
+  background: #c2185b;
+}
+
+#collection {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#collection h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #e91e63;
+}
+
+.feature {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#about {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f8f8;
+}
+
+iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+#pricing {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.price-box {
+  background: #fff;
+  border: 2px solid #e91e63;
+  border-radius: 10px;
+  padding: 25px;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.price-box:hover {
+  transform: scale(1.05);
+}
+
+.highlight {
+  background: #e91e63;
+  color: white;
+  border: none;
+}
+
+#subscribe {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fce4ec;
+}
+
+#subscribe h2 {
+  color: #e91e63;
+  margin-bottom: 15px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  #nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
